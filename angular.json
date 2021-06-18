@@ -29,7 +29,8 @@
                 "glob": "**/*.svg",
                 "input": "node_modules/ionicons/dist/ionicons/svg",
                 "output": "./svg"
-              }
+              },
+              "src/favicon.ico", "src/assets", "src/images"
             ],
             "styles": ["src/theme/variables.scss", "src/global.scss"],
             "scripts": [],
@@ -110,6 +111,7 @@
                 "input": "src/assets",
                 "output": "/assets"
               }
+
             ]
           },
           "configurations": {
