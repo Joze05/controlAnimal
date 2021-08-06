@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TableComponent } from '../table/table.component';
+import { RegisterComponent } from '../register/register.component';
 import { HomePage } from './home.page';
 
 const routes: Routes = [
@@ -9,7 +10,10 @@ const routes: Routes = [
     component: HomePage},
 
 {path: 'table',
-component: TableComponent}
+component: TableComponent},
+
+{path: 'register',
+component: RegisterComponent}
 
   ];
 
@@ -18,4 +22,4 @@ component: TableComponent}
   exports: [RouterModule]
 })
 export class HomePageRoutingModule {}
-export const routingComponent = [TableComponent];
+export const routingComponent = [TableComponent, RegisterComponent];

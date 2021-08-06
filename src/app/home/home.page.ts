@@ -23,4 +23,10 @@ this.router.navigate(['table'])
 
 }
 
+goToRegister(){
+
+this.router.navigate(['register'])
+
+}
+
 }
