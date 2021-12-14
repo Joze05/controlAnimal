@@ -7,19 +7,17 @@ import { HomePage } from './home.page';
 const routes: Routes = [
   {
     path: '',
-    component: HomePage},
+    component: HomePage,
+  },
 
-{path: 'table',
-component: TableComponent},
+  { path: 'table', component: TableComponent },
 
-{path: 'register',
-component: RegisterComponent}
-
-  ];
+  { path: 'register', component: RegisterComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class HomePageRoutingModule {}
 export const routingComponent = [TableComponent, RegisterComponent];
